@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title> Click The Random Shape </title>
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/04/83/90/95/360_F_483909569_OI4LKNeFgHwvvVju60fejLd9gj43dIcd.jpg"/>
+    <style>
+        body {
+            background-color: #1D2A35;
+            color: white;
+        }
+        #shape {
+            display: none;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h2> Click the Random Shape </h2>
+    <h3> Click the random shape as soon as you can </h3>
+    <p> Your reaction time - <span id="reaction_time"></span> </p>
+    <p> Your best reaction time - <span id="best_time"></span> </p>
+    <div id="shape"></div>
+    <script>
+        function shapeAppear() {
+            let x = Math.floor(Math.random()* 1200);
+            let y = Math.floor(Math.random()* 400);
+            let width = Math.floor(Math.random()* 75) + 5;
+
+            // Decide the colour of the shape.
+            if (Math.random() < 0.25) {
+                document.querySelector("#shape").style.backgroundColor = "red";
+            }
+            else if (Math.random() >= 0.25 && Math.random() < 0.5) {
+                document.querySelector("#shape").style.backgroundColor = "green";
+            }
+            else if (Math.random() >= 0.5 && Math.random() < 0.75) {
+                document.querySelector("#shape").style.backgroundColor = "black";
+            }
+            else {
+                document.querySelector("#shape").style.backgroundColor = "yellow";
+            }
+
+            // Decide the shape is circle or a square.
+            if (Math.random() < 0.5) {
+                document.querySelector("#shape").style.borderRadius = "0%";
+            }
+            else {
+                document.querySelector("#shape").style.borderRadius = "50%";
+            }
+
+            document.querySelector("#shape").style.display = "block";
+            document.querySelector("#shape").style.left = x + "px";
+            document.querySelector("#shape").style.top = y + "px";
+            document.querySelector("#shape").style.width = width + "px";
+            document.querySelector("#shape").style.height = width + "px";
+        }
+
+        let bestTime = Number.MAX_VALUE; 
+        let startTime = new Date().getTime();
+        setTimeout(shapeAppear, 500); // Appear the shape for the first time with 500ms delay.
+
+        document.querySelector("#shape").onclick = function() { // Happens when user clicks the shape.
+            document.querySelector("#shape").style.display = "none";
+            let endTime = new Date().getTime();
+            let reactionTime = endTime - startTime - 500;
+            document.querySelector("#reaction_time").innerHTML = reactionTime / 1000 + " s";
+            setTimeout(shapeAppear, 500); // Appear the shape after 500ms delay when user clicks the shape.
+            startTime = new Date().getTime();
+
+            if (reactionTime < bestTime) {
+                bestTime = reactionTime;
+            }
+            document.querySelector("#best_time").innerHTML = bestTime / 1000 + " s";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@media (min-width: 576px) {
+#blogs {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+}
+
+.headings {
+    font-size: 150%;
+}
+.underline {
+    text-decoration: underline;
+}
+.padding {
+    padding-top: 60px;
+}
+.cards {
+    border: solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.cards:hover {
+    background-color: green;
+}

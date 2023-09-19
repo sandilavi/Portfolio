@@ -1,0 +1,38 @@
+@media (min-width: 992px) {
+#intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+.padding {
+    padding-top: 60px;
+}
+#hi {
+    font-size: 60px;
+}
+hr {
+    width: 370px;
+    background-color: white;
+    margin-left: 0px; /*Mandatory*/
+}
+#name {
+    font-size: 100px;
+    line-height: 1.1;    
+}
+#quick_intro {
+    text-align: justify;
+}
+#img {
+    text-align: center;
+}
+#profile_pic {
+    width: 400px;
+    height: 500px; 
+} 
+#profile_pic:hover {
+    transition: 2s;
+    transform: translateX(-20px);
+}
