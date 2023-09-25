@@ -1,14 +1,24 @@
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 670px) {
 #projects {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-}  
+}
+@media (min-width: 768px) {
+#projects {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}   
 
-.headings {
-    font-size: 150%;
+.projects_heading {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .underline {
     text-decoration: underline;

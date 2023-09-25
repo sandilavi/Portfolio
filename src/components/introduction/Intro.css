@@ -7,6 +7,49 @@
 }
 }
 
+@media (max-width: 575px) {
+#profile_pic {
+    max-width: 100% !important;
+    height: auto !important; 
+}   
+#img {
+    text-align: center;
+} 
+#hi {
+    font-size: 60px !important;
+}    
+#name {
+    font-size: 80px !important;
+}
+}
+
+@media (max-width: 450px) {
+#hi {
+    font-size: 50px !important;
+}    
+#name {
+    font-size: 60px !important;
+}
+}
+
+@media (max-width: 320px) {
+#hi {
+    font-size: 30px !important;
+}    
+#name {
+    font-size: 40px !important;
+}
+}
+
+@media (max-width: 250px) {
+#hi {
+    font-size: 20px !important;
+}    
+#name {
+    font-size: 20px !important;
+}
+}
+    
 .padding {
     padding-top: 60px;
 }
@@ -32,7 +75,3 @@ hr {
     width: 400px;
     height: 500px; 
 } 
-#profile_pic:hover {
-    transition: 2s;
-    transform: translateX(-20px);
-}

@@ -1,6 +1,9 @@
-.navbar-nav .nav-link {
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-link {
     color: white !important;
 }
-.navbar-nav .nav-link:hover {
+.nav-link:hover {
     color: yellow !important;
 }

@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (min-width: 680px) {
 #blogs {
     height: 100vh;
     display: flex;
@@ -7,8 +7,10 @@
 }    
 }
 
-.headings {
-    font-size: 150%;
+.blogs_heading {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .underline {
     text-decoration: underline;

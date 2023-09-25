@@ -1,21 +1,55 @@
 import React from 'react'
 import './Navigation.css'
+import HomeIcon from '@mui/icons-material/Home';
+import Person2Icon from '@mui/icons-material/Person2';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import WorkIcon from '@mui/icons-material/Work';
+import EmailIcon from '@mui/icons-material/Email';
+import {Link} from 'react-router-dom';
 
 export default function Navigation() {
   return (
     <div id="navbar">
       
-    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-sm">
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navBar"><span class="navbar-toggler-icon"></span></button>
-    <div class="navbar-collapse collapse" id="navBar">    
-        <ul class="navbar-nav">
-            <li class="nav-item mr-2"><a class="nav-link" href="#intro"> Home </a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="#about_me"> About Me </a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="#blogs"> Blogs </a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="#projects"> Projects </a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="#contact_me"> Contact Me </a></li>
-        </ul>
-    </div>    
+    <nav className="navbar navbar-dark bg-dark fixed-top">    
+      <ul className="navbar-nav mx-auto">
+
+        <li className="nav-item mr-4 d-sm-none">
+          <a> <Link to={"/"} className="nav-link"> <HomeIcon/> </Link> </a>
+        </li>
+        <li className="nav-item mr-4 d-none d-sm-block">
+          <a> <Link to={"/"} className="nav-link"> Home </Link>  </a>
+        </li>
+
+        <li className="nav-item mr-4 d-sm-none">
+          <a> <Link to={"/about"} className="nav-link"> <Person2Icon/> </Link> </a>
+        </li>
+        <li className="nav-item mr-4 d-none d-sm-block">
+          <a> <Link to={"/about"} className="nav-link"> About Me </Link> </a>
+        </li>
+
+        <li className="nav-item mr-4 d-sm-none">
+          <a> <Link to={"/blogs"} className="nav-link"> <LibraryBooksIcon/> </Link> </a>
+        </li>
+        <li className="nav-item mr-4 d-none d-sm-block">
+          <a> <Link to={"/blogs"} className="nav-link"> Blogs </Link> </a>
+        </li>
+
+        <li className="nav-item mr-4 d-sm-none">
+          <a> <Link to={"/projects"} className="nav-link"> <WorkIcon/> </Link> </a>
+        </li>
+        <li className="nav-item mr-4 d-none d-sm-block">
+          <a> <Link to={"/projects"} className="nav-link"> Projects </Link> </a>
+        </li>
+
+        <li className="nav-item mr-4 d-sm-none">
+          <a> <Link to={"/contacts"} className="nav-link"> <EmailIcon/> </Link> </a>
+        </li>
+        <li className="nav-item mr-4 d-none d-sm-block">
+          <a> <Link to={"/contacts"} className="nav-link"> Contact Me </Link> </a>
+        </li>
+
+      </ul>    
     </nav>
     
     </div>

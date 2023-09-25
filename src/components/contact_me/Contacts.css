@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (min-width: 0px) {
 #contact_me {
     height: 100vh;
     display: flex;
@@ -7,18 +7,31 @@
 }    
 }
     
-.headings {
-    font-size: 150%;
+.contacts_heading {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .padding {
     padding-top: 60px;
 }
-.cards {
-    border: solid;
-    margin-bottom: 10px;
-    padding: 10px;
+.m_bottom {
+    margin-bottom: 40px;
 }
-.cards:hover {
+.form_fields {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+}
+.form_fields:focus {
+    outline: none;
+}
+.message {
+    height: 150px;
+}
+.cards_contact:hover {
     background-color: green;
 }
 .center {
@@ -29,16 +42,17 @@
 .margin {
     margin-right: 5px;
 }
-.fa-linkedin {
-    font-size: 16px;
-}
-.fa-github {
-    font-size: 16px;
-}
-.contact {
+.social_media_icons {
     text-decoration: none !important;
     color: white;
+    margin-right: 15px;
 }
-.contact:hover {
+.social_media_icons:hover {
     color: yellow !important;
+}
+textarea {
+    resize: none;
+}
+.submit_btn {
+    margin-top: 20px;
 }

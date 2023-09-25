@@ -1,43 +1,47 @@
 import React from 'react'
 import './Contacts.css'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Contacts() {
   return (
     <div id="contact_me">
-          
-    <div class="container-fluid padding pl-5 pr-5 mb-4">    
-    <p class="headings"> Contact Me </p>
-    <div class="row">
-
-        <div class="col-12 col-sm-6 col-lg-3">
-        <div class="cards center">
-            <i class="fas fa-phone margin"></i> 075-6714987
-        </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-5">
-        <div class="cards center">
-            <i class="fas fa-envelope margin"></i> sandilavihanga@gmail.com 
-        </div>
-        </div>
-
-        <div class="col-6 col-lg-2">
-        <div class="cards center">    
-            <i class="fab fa-linkedin margin"></i> <a href="https://www.linkedin.com/in/sandila-vihanga-79033b223/" target="_blank" 
-            rel="noreferrer" class="contact linkedin"> Linkedin </a>
-        </div>
-        </div>
-        
-        <div class="col-6 col-lg-2">
-        <div class="cards center">    
-            <i class="fab fa-github margin"></i> <a href="https://github.com/sandilavi" target="_blank" rel="noreferrer" 
-            class="contact github"> Github </a>
-        </div>
-        </div>
-
-    </div>    
-    </div>
+    <div className="container-fluid padding pl-5 pr-5">
     
+        <div className="row">
+        <div className="ml-auto mr-1 m_bottom">    
+            <a href="https://www.linkedin.com/in/sandila-vihanga-79033b223/" target="_blank" rel="noreferrer" className="social_media_icons"> <LinkedInIcon/> </a>
+            <a href="https://github.com/sandilavi" target="_blank" rel="noreferrer" className="social_media_icons"> <GitHubIcon/> </a>
+        </div>   
+        </div>    
+        
+        <p className="contacts_heading"> Contact Me </p>
+    
+        <form action="https://formspree.io/f/xnqkgoao" method="POST">
+        <div className="row">
+            <div className="col-12 col-md-6">
+                <input type="text" name='Name' placeholder='Name' className="form_fields center" required/>
+            </div>
+
+            <div className="col-12 col-md-6">
+                <input type="email" name='Email' placeholder='Email' className="form_fields center" required/>
+            </div>
+
+            <div className="col-12">
+                <input type="text" name='Subject' placeholder='Subject' className="form_fields center" required/>    
+            </div>
+
+            <div className="col-12">
+                <textarea name='Message' placeholder='Message' className="form_fields message center" required/>   
+            </div>
+
+            <div className="col-12">
+                <button type='submit' className="btn submit_btn">Let's Talk</button>  
+            </div>
+        </div>       
+        </form>
+    
+    </div>
     </div>
   )
 }
