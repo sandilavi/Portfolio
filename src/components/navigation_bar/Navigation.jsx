@@ -15,38 +15,38 @@ export default function Navigation() {
       <ul className="navbar-nav mx-auto">
 
         <li className="nav-item mr-4 d-sm-none">
-          <a> <Link to={"/"} className="nav-link"> <HomeIcon/> </Link> </a>
+          <Link to={"/"} className="nav-link"> <HomeIcon/> </Link>
         </li>
         <li className="nav-item mr-4 d-none d-sm-block">
-          <a> <Link to={"/"} className="nav-link"> Home </Link>  </a>
+          <Link to={"/"} className="nav-link"> Home </Link>
         </li>
 
         <li className="nav-item mr-4 d-sm-none">
-          <a> <Link to={"/about"} className="nav-link"> <Person2Icon/> </Link> </a>
+          <Link to={"/about"} className="nav-link"> <Person2Icon/> </Link>
         </li>
         <li className="nav-item mr-4 d-none d-sm-block">
-          <a> <Link to={"/about"} className="nav-link"> About Me </Link> </a>
+          <Link to={"/about"} className="nav-link"> About Me </Link>
         </li>
 
         <li className="nav-item mr-4 d-sm-none">
-          <a> <Link to={"/blogs"} className="nav-link"> <LibraryBooksIcon/> </Link> </a>
+          <Link to={"/blogs"} className="nav-link"> <LibraryBooksIcon/> </Link>
         </li>
         <li className="nav-item mr-4 d-none d-sm-block">
-          <a> <Link to={"/blogs"} className="nav-link"> Blogs </Link> </a>
+          <Link to={"/blogs"} className="nav-link"> Blogs </Link>
         </li>
 
         <li className="nav-item mr-4 d-sm-none">
-          <a> <Link to={"/projects"} className="nav-link"> <WorkIcon/> </Link> </a>
+          <Link to={"/projects"} className="nav-link"> <WorkIcon/> </Link>
         </li>
         <li className="nav-item mr-4 d-none d-sm-block">
-          <a> <Link to={"/projects"} className="nav-link"> Projects </Link> </a>
+          <Link to={"/projects"} className="nav-link"> Projects </Link>
         </li>
 
         <li className="nav-item mr-4 d-sm-none">
-          <a> <Link to={"/contacts"} className="nav-link"> <EmailIcon/> </Link> </a>
+          <Link to={"/contacts"} className="nav-link"> <EmailIcon/> </Link>
         </li>
         <li className="nav-item mr-4 d-none d-sm-block">
-          <a> <Link to={"/contacts"} className="nav-link"> Contact Me </Link> </a>
+          <Link to={"/contacts"} className="nav-link"> Contact Me </Link>
         </li>
 
       </ul>    
