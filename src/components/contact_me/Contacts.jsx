@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Contacts() {
   return (
     <div id="contact_me">
-    <div className="container-fluid padding pl-5 pr-5">
+    <div className="container-fluid pl-5 pr-5 pt-5 pb-3 p_top">
     
         <div className="row">
         <div className="ml-auto mr-1 m_bottom">    

@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (min-width: 992px) {
 #about_me {
     height: 100vh;
     display: flex;
@@ -6,26 +6,37 @@
     align-items: center;
 }    
 }
+@media (max-width: 991px) {
+.p_top {
+    padding-top: 75px !important;
+}     
+}
+@media (max-width: 250px) {
+.about_heading {
+    font-size: 30px !important;
+}     
+}
 
+.about {
+    text-align: justify;
+}
 .about_heading {
     font-size: 50px;
     text-align: center;
     margin-bottom: 50px;
 }
-.underline {
-    text-decoration: underline;
-}
-.padding {
-    padding-top: 60px;
-}   
-.about_me {
-    text-align: justify;
-}
-.skills {
-    line-height: 0.7;
-}
 .cards_skills {
     border: solid;
     margin-bottom: 10px;
     padding: 10px;
+    border-radius: 10px;
+}
+.skill_name {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.skills {
+    line-height: 0.7;
+    text-align: center;
 }

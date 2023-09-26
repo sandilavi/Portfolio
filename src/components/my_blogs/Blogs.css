@@ -1,4 +1,4 @@
-@media (min-width: 680px) {
+@media (min-width: 890px) {
 #blogs {
     height: 100vh;
     display: flex;
@@ -6,23 +6,30 @@
     align-items: center;
 }    
 }
+@media (max-width: 889px) {
+.p_top {
+    padding-top: 75px !important;
+}     
+}
+@media (max-width: 250px) {
+.blogs_heading {
+    font-size: 30px !important;
+}     
+}
 
 .blogs_heading {
     font-size: 50px;
     text-align: center;
     margin-bottom: 50px;
 }
-.underline {
-    text-decoration: underline;
-}
-.padding {
-    padding-top: 60px;
-}
-.cards {
+.cards_blogs {
     border: solid;
     margin-bottom: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
-.cards:hover {
-    background-color: green;
+.blog_title {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
 }

@@ -5,14 +5,14 @@ export default function About() {
   return (
     <div id="about_me">
           
-    <div className="container-fluid about_me padding pl-5 pr-5">
+    <div className="container-fluid about pl-5 pr-5 pt-5 pb-3 p_top">
     <div className="intro_sec pb-4">
     <p className="about_heading"> About Me </p>
     <p>
-        I'm Sandila Vihanga. I'm 23 years old now. I studied at St. Aloysius' College, Galle. I'm currently taking BEng(Hons) Software 
-        Engineering degree at IIT university. My father is a police officer and mother is a registar of marriages. I have a younger 
-        sister. My leisure time activity is watching youtube, movies and TV shows. As a Software Engineering student, I love web designing 
-        and developing.
+        I'm Sandila Vihanga. I studied at St. Aloysius' College, Galle. I'm currently taking BSc (Hons) Computer
+        Science degree at university of IIT. With a strong foundation in IT and a passion for software development, I’m actively seeking a
+        front-end development internship in a reputable IT organization. I aim to apply my academic knowledge and dedication to contribute 
+        effectively while gaining valuable real-world experience.
     </p>
     </div>    
         
@@ -21,7 +21,7 @@ export default function About() {
             
         <div className="col-12 col-sm-6 col-lg-3 pb-3">
         <div className="cards_skills">
-            <p className="underline"> Programming Languages </p>
+            <p className="skill_name"> Programming Languages </p>
             <div className="skills">
                 <p> HTML </p>
                 <p> CSS </p>
@@ -34,7 +34,7 @@ export default function About() {
 
         <div className="col-12 col-sm-6 col-lg-3 pb-3">
         <div className="cards_skills">
-            <p className="underline"> Soft Skills </p>
+            <p className="skill_name"> Soft Skills </p>
             <div className="skills">
                 <p> Quick Learner </p>
                 <p> Critical Thinking </p>
@@ -47,7 +47,7 @@ export default function About() {
 
         <div className="col-12 col-sm-6 col-lg-3 pb-3">
         <div className="cards_skills">
-            <p className="underline"> FrameWorks </p>
+            <p className="skill_name"> Frameworks </p>
             <div className="skills">
                 <p> Bootstrap </p>
                 <p> React JS </p>
@@ -57,7 +57,7 @@ export default function About() {
 
         <div className="col-12 col-sm-6 col-lg-3">
         <div className="cards_skills">
-            <p className="underline"> Languages </p>
+            <p className="skill_name"> Languages </p>
             <div className="skills">
                 <p> English </p>
                 <p> Sinhala </p>
