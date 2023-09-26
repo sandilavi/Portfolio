@@ -12,13 +12,13 @@
 }     
 }
 @media (max-width: 250px) {
-.contacts_heading {
+.projects_heading {
     font-size: 30px !important;
 }     
 }
 
-.m_bottom {
-    margin-bottom: 40px;
+.p_bottom {
+    padding-bottom: 40px;
 }
 .social_media_icons {
     text-decoration: none !important;
@@ -43,6 +43,10 @@
 .form_fields:focus {
     outline: none;
 }
+.input_fields {
+    width: 100%;
+    height: auto;
+}
 .center {
     display: flex;
     justify-content: center;
@@ -52,7 +56,8 @@ textarea {
     resize: none;
 }
 .message {
-    height: 150px;
+    width: 100%;
+    height: 190px;
 }
 .submit_btn {
     margin-top: 20px;
