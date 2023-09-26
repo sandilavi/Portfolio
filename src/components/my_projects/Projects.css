@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 #projects {
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 }   
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 .p_top {
     padding-top: 75px !important;
 }     

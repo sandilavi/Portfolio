@@ -1,24 +1,23 @@
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 #contact_me {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }    
-}
-@media (max-width: 767px) {
-.p_top {
-    padding-top: 75px !important;
 }     
-}
+
 @media (max-width: 250px) {
 .projects_heading {
     font-size: 30px !important;
 }     
 }
 
+.p_top {
+    padding-top: 75px !important;
+}
 .p_bottom {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .social_media_icons {
     text-decoration: none !important;
