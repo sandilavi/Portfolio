@@ -22,6 +22,7 @@
 }    
 #name {
     font-size: 60px !important;
+    font-weight: bold;
 }
 }
 
@@ -31,6 +32,7 @@
 }    
 #name {
     font-size: 40px !important;
+    font-weight: bold;
 }
 }
 
@@ -40,6 +42,7 @@
 }    
 #name {
     font-size: 30px !important;
+    font-weight: bold;
 }
 }
     

@@ -6,15 +6,23 @@
     align-items: center;
 }    
 }     
-
 @media (max-width: 250px) {
-.projects_heading {
+.contacts_heading {
     font-size: 30px !important;
+    font-weight: bold;
+}     
+}
+@media (max-width: 575px) {
+.p_top {
+    padding-top: 85px !important;
+}
+.p_bottom {
+    padding-bottom: 40px !important;
 }     
 }
 
 .p_top {
-    padding-top: 75px !important;
+    padding-top: 75px;
 }
 .p_bottom {
     padding-bottom: 30px;
